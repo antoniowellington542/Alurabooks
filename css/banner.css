@@ -1,0 +1,41 @@
+section#banner{
+    background: var(--azul-degrade);
+    color: var(--branco);
+    padding: 2em;
+    text-align: center;
+}
+
+section#banner .banner__titulo{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+section#banner .banner__texto{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 2em;
+}
+
+section#banner .banner__search{
+    width: 100%;   
+    border: 1px solid var(--branco);
+    border-radius: 24px;
+    padding: 1.2em;
+    background: var(--azul-degrade);
+    color: var(--branco);
+}
+
+section#banner .banner__search:focus{
+    outline: none;
+}
+
+section#banner .banner__search::placeholder{
+    background: url("../img/Pesquisa.svg");
+    background-repeat: no-repeat;
+    background-position: 1em;
+    color: var(--branco);
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+}

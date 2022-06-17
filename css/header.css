@@ -1,0 +1,79 @@
+header .cabecalho{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--branco);
+    position: relative;
+}
+
+header div.cabecalho .container{
+    display: flex;
+    align-items: center;
+}
+
+
+header div.cabecalho .container span.menu__icon{
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+}
+
+header div.cabecalho .container .cabecalho__logo{
+    margin-left: 1em;
+}
+
+header div.cabecalho .container .nav__menu input.menu__button{
+    display: none;
+}
+
+header div.cabecalho .container .nav__menu ul.list__menu{
+    display: none;
+    list-style: none;
+}
+
+header div.cabecalho .container .nav__menu input.menu__button:checked~ul.list__menu
+{
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 15em;
+    box-shadow: 0px 2px 2px black;
+    background-color: var(--branco);
+}
+
+header div.cabecalho .container .nav__menu ul.list__menu li.list__menu-options{
+    margin-top: 1em;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+header div.cabecalho .container .nav__menu ul.list__menu li.list__menu-options .list__menu-title{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+header div.cabecalho .container .nav__menu ul.list__menu li.list__menu-options .list__menu-links{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+header div.cabecalho .container .nav__menu ul.list__menu li.list__menu-options:not(:first-child):hover {
+   background-color: rgb(176, 227, 237);
+}
+
+
+
+
+
+
+
+

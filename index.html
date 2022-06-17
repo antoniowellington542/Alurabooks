@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="./css/styles.css">
+
+    </head>
+
+    <body>
+        <!--INICIO HEADER-->
+        <header>
+            <div class="cabecalho">
+                <div class="container">
+                    <div class="nav__menu">
+                        <input type="checkbox" id="menu" class="menu__button">
+                        <label for="menu">
+                            <span class="menu__icon"></span>
+                        </label>
+                        <ul class="list__menu">
+                            <li class="list__menu-options">
+                                <span class="list__menu-title">Categorias</span> 
+                            </li>
+                            <li class="list__menu-options">
+                                <a class="list__menu-links" href="#">Programação</a> 
+                            </li>
+                            <li class="list__menu-options">
+                                <a class="list__menu-links" href="#">Front-end</a> 
+                            </li>
+                            <li class="list__menu-options">
+                                <a class="list__menu-links" href="#">Infraestrutura</a> 
+                            </li>
+                            <li class="list__menu-options">
+                                <a class="list__menu-links" href="#">Business</a> 
+                            </li>
+                            <li class="list__menu-options">
+                                <a class="list__menu-links" href="#">Design & UX</a> 
+                            </li>
+                        </ul>
+                    </div>
+                    <img class="cabecalho__logo" src="./img/Logo.svg" alt="menu_header">
+                </div>
+                <div class="container">
+                    <a href="#"><img src="./img/Favoritos.svg" alt="menu_header"></a>
+                    <a href="#"><img src="./img/Compras.svg" alt="menu_header"></a>
+                    <a href="#"><img src="./img/Usuário.svg" alt="menu_header"></a>
+                </div>
+            </div>
+        </header>
+        <!--FIM HEADER-->
+        <main>
+            <!--BANNER INICIO-->
+            <section id="banner">
+                <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+                <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+                <input class="banner__search" type="search" name="search" placeholder="Qual será sua próxima leitura?">
+
+            </section>
+            <!--FIM BANNER-->
+            <!--ULTIMOS LANÇAMENTOS INICIO-->
+            <section id="ultimos__lancamentos">
+                <h2 class="section__title">Ultimos lançamentos</h2>
+                <div class="caroussel__area">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <div class="swiper-pagination swiper-pagination-bullets">
+                            <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                        </div>
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide" data-swiper-slide-index="1"><img src="img/Liderança.png" alt="livro de Lideranca"></div>
+                            <div class="swiper-slide" data-swiper-slide-index="2"><img src="img/Javascript.png" alt="livro de javascript"></div>
+                            <div class="swiper-slide" data-swiper-slide-index="3"><img src="img/ApacheKafka.png" alt="livro de apache"></div>
+                            <div class="swiper-slide" data-swiper-slide-index="4"><img src="img/Guia Front-end.png" alt="livro de front-end"></div>
+                            <div class="swiper-slide" data-swiper-slide-index="5"><img src="img/Portugol.png" alt="livro de portugol"></div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="card__area">
+                    <div class="card">
+                        <div class="card__conteudo">
+                            <div>
+                                <h3 class="card__sugestao">Talvez você também se interesse por...</h3>
+                                <h2 class="card__titulo">Angular 11 e Firebase</h2>
+                                <p class="card__texto">Construindo uma aplicação integrada com a plataforma do Google</p>
+                            </div>
+                            <div>
+                                <a href="#"><img src="img/Favoritos.svg" alt="favoritos-card"></a>
+                                <a href="#"><img src="img/Compras.svg" alt="compras-card"></a>
+                            </div>
+                        </div>
+                        <div class="card__interesse">
+                            <img src="img/Angular.png" alt="">
+                            <a class="card__button" href="#">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--FIM ULTIMOS LANÇAMENTOS-->
+            <!--MAIS VENDIDOS INICIO-->
+            <section id="mais__vendidos">
+                <h2 class="section__title">Mais vendidos</h2>
+                <div class="caroussel__area">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <div class="swiper-pagination swiper-pagination-bullets">
+                            <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                        </div>
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide" data-swiper-slide-index="1"><img src="img/Guia Front-end.png" alt="livro de Lideranca"></div>
+                            <div class="swiper-slide" data-swiper-slide-index="2"><img src="img/Javascript.png" alt="livro de javascript"></div>
+                            <div class="swiper-slide" data-swiper-slide-index="3"><img src="img/ApacheKafka.png" alt="livro de apache"></div>
+                            <div class="swiper-slide" data-swiper-slide-index="4"><img src="img/Guia Front-end.png" alt="livro de front-end"></div>
+                            <div class="swiper-slide" data-swiper-slide-index="5"><img src="img/Portugol.png" alt="livro de portugol"></div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="card__area">
+                    <div class="card">
+                        <div class="card__conteudo">
+                            <div>
+                                <img class="card__content-img" src="img/Estrelinhas.png" alt="card-estrelas">
+                                <h3 class="card__sugestao">Autora do Mês</h3>
+                                <h2 class="card__titulo">Juliana Agarikov</h2>
+                                <p class="card__texto">
+                                    Analista de sistemas e escritora, Juliana é especialista em Front-End.
+                                </p>
+                            </div>
+                            <div>
+                                <a href="#"><img src="img/Favoritos.svg" alt="favoritos-card"></a>
+                                <a href="#"><img src="img/Compras.svg" alt="compras-card"></a>
+                            </div>
+                        </div>
+                        <div class="card__interesse">
+                            <img src="img/Perfil-escritora 1.png" alt="">
+                            <a class="card__button" href="#">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--FIM MAIS VENDIDOS-->
+        </main>
+        <footer>
+
+        </footer>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

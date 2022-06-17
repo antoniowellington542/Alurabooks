@@ -1,0 +1,86 @@
+@import url("header.css");
+@import url("banner.css");
+@import url("ultimos-lancamentos.css");
+@import url("mais-vendidos.css");
+
+:root{
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --laranja: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins", sans-serif;
+    --preto: rgba(0,0,0,0.85);
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2.section__title{
+    color: #EB9B00;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card__area{
+    padding: 2em 1em 2em 1em;
+    font-weight: 700;
+}
+
+.card{
+    display: flex;
+    background: var(--branco);
+    padding: 1em 0.7em 1em 0.7em;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    gap: 1em;
+}
+
+
+
+
+.card__sugestao{
+    font-size: 16px;
+    color: var(--laranja);
+}
+
+.card__titulo{
+    font-size: 18px;
+}
+
+.card__texto{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--preto);
+    margin-bottom: 1em;
+}
+
+.card__interesse{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__button{
+    background: var(--laranja);
+    border: none;
+    padding: 1em;
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+}
+
+.card__content-img{
+    padding-bottom: 1em;
+}
