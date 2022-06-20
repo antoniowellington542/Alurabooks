@@ -8,7 +8,7 @@ section#banner{
 section#banner .banner__titulo{
     font-size: 18px;
     font-weight: 700;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 section#banner .banner__texto{
@@ -24,6 +24,7 @@ section#banner .banner__search{
     padding: 1.2em;
     background: var(--azul-degrade);
     color: var(--branco);
+    margin-bottom: 3em;
 }
 
 section#banner .banner__search:focus{
@@ -38,4 +39,19 @@ section#banner .banner__search::placeholder{
     text-align: center;
     font-weight: 400;
     font-size: 14px;
+}
+
+@media screen and (min-width: 1024px) {
+    section#banner .banner__titulo{
+        font-size: 36px;
+        
+    }
+
+    section#banner .banner__search{
+        width: 50%;   
+    }
+
+    section#banner .banner__search::placeholder{
+        background-position: 7em;
+    }
 }

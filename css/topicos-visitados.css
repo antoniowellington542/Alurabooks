@@ -1,0 +1,34 @@
+section#topicos__visitados{
+    background: var(--azul-degrade);
+    padding: 2em 0em;
+}
+
+section#topicos__visitados h2.topicos__title{
+   color: var(--branco);
+   font-size: 16px;
+   font-weight: 300;
+   text-align: center;
+   padding-bottom: 1em;
+   text-transform: uppercase;
+}
+
+section#topicos__visitados .topico__lista li.topico__lista-item{
+    margin: 2em 0em 1em 0.5em;
+}
+
+section#topicos__visitados .topico__lista {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section#topicos__visitados .topico__lista li.topico__lista-item a.topico__lista-link{
+    text-decoration: none;
+    color: var(--branco);
+    background: var(--laranja);
+    padding: 1em;
+    font-weight: 700;
+    font-size: 14px;
+}
+

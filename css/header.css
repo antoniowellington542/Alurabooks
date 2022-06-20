@@ -1,5 +1,5 @@
 header .cabecalho{
-    padding: 1em;
+    padding: 2em 1em 1em 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,7 +13,7 @@ header div.cabecalho .container{
 }
 
 
-header div.cabecalho .container span.menu__icon{
+header div.cabecalho .container .menu__icon{
     background-image: url("../img/Menu.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -23,19 +23,23 @@ header div.cabecalho .container span.menu__icon{
 }
 
 header div.cabecalho .container .cabecalho__logo{
-    margin-left: 1em;
+    padding: 0 1em;
 }
 
-header div.cabecalho .container .nav__menu input.menu__button{
+header .cabecalho .container .logo__titulo{
+    display: none;
+} 
+
+.menu__button{
     display: none;
 }
 
-header div.cabecalho .container .nav__menu ul.list__menu{
+header div.cabecalho .container .nav__menu .list__menu{
     display: none;
     list-style: none;
 }
 
-header div.cabecalho .container .nav__menu input.menu__button:checked~ul.list__menu
+header div.cabecalho .container .nav__menu .menu__button:checked~.list__menu
 {
     display: block;
     position: absolute;
@@ -44,20 +48,21 @@ header div.cabecalho .container .nav__menu input.menu__button:checked~ul.list__m
     width: 15em;
     box-shadow: 0px 2px 2px black;
     background-color: var(--branco);
+    z-index: 2;
 }
 
-header div.cabecalho .container .nav__menu ul.list__menu li.list__menu-options{
+header div.cabecalho .container .nav__menu .list__menu-options{
     margin-top: 1em;
     text-transform: uppercase;
     padding: 1em;
 }
 
-header div.cabecalho .container .nav__menu ul.list__menu li.list__menu-options .list__menu-title{
+header div.cabecalho .container .nav__menu .list__menu-title{
     color: var(--laranja);
     font-weight: 700;
 }
 
-header div.cabecalho .container .nav__menu ul.list__menu li.list__menu-options .list__menu-links{
+header div.cabecalho .container .nav__menu  .list__menu-links{
     background: var(--azul-degrade);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -66,14 +71,82 @@ header div.cabecalho .container .nav__menu ul.list__menu li.list__menu-options .
     font-weight: 400;
 }
 
-header div.cabecalho .container .nav__menu ul.list__menu li.list__menu-options:not(:first-child):hover {
+header div.cabecalho .container .nav__menu  .list__menu-options:not(:first-child):hover {
    background-color: rgb(176, 227, 237);
 }
 
 
+header div.cabecalho .nav__menu-tablet{
+    display: none;
+}
 
 
+.nav__menu-desktop {
+    display: none;
+}
 
+@media screen and (min-width: 1024px) {
+    /*header inicion*/
+    header .cabecalho .container .logo__titulo{
+        display: block;
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+    } 
 
+    .icon__favoritos{
+        display: none;
+    }
+    .logo__titulo{
+        font-weight: 400;
+        display: block;
+    } 
 
+    .logo__titulo-negrito{
+        font-weight: 700;
+    }
+
+    .nav__menu-desktop {
+        display: block;
+    }
+    .nav__menu-desktop .list__menu-desktop{
+        display: flex;
+    }
+
+    .list__menu-desktop .list__menu{
+        display: none;
+    }
+
+    .list__menu-desktop li{
+        padding: 0 2em;
+        text-transform: uppercase;
+    }
+
+    .nav__menu-desktop .list__menu-options{
+        padding: 1em;
+    }
+
+    .list__menu-options:hover {
+        background-color: rgb(176, 227, 237);
+    }
+
+    .desktop__menu-links, .list__menu-links{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--preto);
+    }
+
+    .nav__menu{
+        display: none;
+    }
+
+    .nav__menu-desktop .menu__button:checked~.list__menu{
+        display: block;
+        position: absolute;
+        top: 100%;
+        background: var(--branco);
+        width: auto;
+        padding: 1em 0 0 0;
+    }
+
+}
 
