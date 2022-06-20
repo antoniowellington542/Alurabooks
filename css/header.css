@@ -1,5 +1,5 @@
 header .cabecalho{
-    padding: 2em 1em 1em 1em;
+    padding: 0 1em 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,6 +16,7 @@ header div.cabecalho .container{
 header div.cabecalho .container .menu__icon{
     background-image: url("../img/Menu.svg");
     background-repeat: no-repeat;
+    background-position: center;
     width: 55px;
     height: 55px;
     display: inline-block;
@@ -33,12 +34,12 @@ header .cabecalho .container .logo__titulo{
     display: none;
 }
 
-header div.cabecalho .container .nav__menu .list__menu{
+header div.cabecalho .container  .list__menu{
     display: none;
     list-style: none;
 }
 
-header div.cabecalho .container .nav__menu .menu__button:checked~.list__menu
+header div.cabecalho .container .menu__button:checked~.list__menu
 {
     display: block;
     position: absolute;
@@ -50,18 +51,18 @@ header div.cabecalho .container .nav__menu .menu__button:checked~.list__menu
     z-index: 2;
 }
 
-header div.cabecalho .container .nav__menu .list__menu-options{
+header div.cabecalho .container .list__menu-options{
     margin-top: 1em;
     text-transform: uppercase;
     padding: 1em;
 }
 
-header div.cabecalho .container .nav__menu .list__menu-title{
+header div.cabecalho .container .list__menu-title{
     color: var(--laranja);
     font-weight: 700;
 }
 
-header div.cabecalho .container .nav__menu  .list__menu-links{
+header div.cabecalho .container  .list__menu-links{
     background: var(--azul-degrade);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -70,15 +71,14 @@ header div.cabecalho .container .nav__menu  .list__menu-links{
     font-weight: 400;
 }
 
-header div.cabecalho .container .nav__menu  .list__menu-options:not(:first-child):hover {
+header div.cabecalho .container  .list__menu-options:not(:first-child):hover {
    background-color: rgb(176, 227, 237);
 }
 
 
-header div.cabecalho .nav__menu-tablet{
+header div.cabecalho-tablet{
     display: none;
 }
-
 
 .nav__menu-desktop {
     display: none;
@@ -91,12 +91,17 @@ header .icon__usuario p{
         display: none;
 }
 
-header .container .nav__menu .menu__button:checked~.rotulo__menu > .menu__icon{
+header .container .menu__button:checked~.rotulo__menu>.menu__icon{
     background-image: url("../img/Menu-Aberto.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+
 }
 
-
-header .container .nav__menu .menu__button:checked~.rotulo__menu{
+header .container .menu__button:checked~.rotulo__menu{
     background: var(--azul-degrade);
 }
 
@@ -133,7 +138,7 @@ header .container .nav__menu .menu__button:checked~.rotulo__menu{
     }
 
     .list__menu-desktop li{
-        padding: 0 2em;
+        padding: 1em;
         text-transform: uppercase;
     }
 
@@ -151,8 +156,13 @@ header .container .nav__menu .menu__button:checked~.rotulo__menu{
         color: var(--preto);
     }
 
-    .nav__menu{
-        display: none;
+    header div.cabecalho .container .menu__icon{
+       display: none;
+    }
+
+    .nav__menu-desktop .menu__button:checked~.desktop__rotulo{
+        background: var(--azul-degrade);
+        color: var(--branco);
     }
 
     .nav__menu-desktop .menu__button:checked~.list__menu{
@@ -163,6 +173,8 @@ header .container .nav__menu .menu__button:checked~.rotulo__menu{
         width: auto;
         padding: 1em 0 0 0;
     }
+
+
 
 }
 
