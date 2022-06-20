@@ -22,8 +22,8 @@
                 <div class="container">
                     <div class="nav__menu">
                         <input type="checkbox" id="menu" class="menu__button">
-                        <label for="menu">
-                            <span class="menu__icon"></span>
+                        <label for="menu" class="rotulo__menu">
+                            <span class="menu__icon menu__img"></span>
                         </label>
                         <ul class="list__menu">
                             <li class="list__menu-options">
@@ -52,7 +52,7 @@
                 <div class="nav__menu-desktop">
                     <ul class="list__menu-desktop">
                         <input type="checkbox" id="desktop-menu" class="menu__button">
-                        <label for="desktop-menu">
+                        <label for="desktop-menu" >
                             <li class="desktop__menu-button">Categorias</li>
                         </label>
                         <ul class="list__menu">
@@ -74,6 +74,7 @@
                         </ul>
                         <li class="desktop__menu-options">
                             <a class="desktop__menu-links" href="#">Favoritos</a>
+
                         </li>
                         <li class="desktop__menu-options">
                             <a class="desktop__menu-links" href="#">Minha estante</a>
@@ -81,9 +82,15 @@
                     </ul>
                 </div>
                 <div class="container">
-                    <a href="#"><img class="icon__favoritos" src="./img/Favoritos.svg" alt="menu_header"></a>
-                    <a href="#"><img src="./img/Compras.svg" alt="compras_header"></a>
-                    <a href="#"><img src="./img/Usuário.svg" alt="menu_header"></a>
+                    <a class="icon__favoritos" href="#"><img  src="./img/Favoritos.svg" alt="menu_header"></a>
+                    <a class="icon__compras" href="#">
+                        <img src="./img/Compras.svg" alt="compras_header">
+                        <p>Minha sacola</p>
+                    </a>
+                    <a class="icon__usuario" href="#">
+                        <img src="./img/Usuário.svg" alt="menu_header">
+                        <p>Meu perfil</p>
+                    </a>
                 </div>
             </div>
         </header>
@@ -100,28 +107,25 @@
             <!--ULTIMOS LANÇAMENTOS INICIO-->
             <section id="ultimos__lancamentos">
                 <h2 class="section__title">Ultimos lançamentos</h2>
-                <div class="content">
-                    <div class="caroussel__area">
+                <div class="caroussel__area">
                         <!-- Slider main container -->
-                        <div class="swiper">
-                            <div class="swiper-pagination swiper-pagination-bullets">
-                                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
-                                <span class="swiper-pagination-bullet"></span>
-                                <span class="swiper-pagination-bullet"></span>
-                                <span class="swiper-pagination-bullet"></span>
-                                <span class="swiper-pagination-bullet"></span>
-                            </div>
-                            <div class="swiper-wrapper">
-                               
-                                <div class="swiper-slide" data-swiper-slide-index="1"><img src="img/Liderança.png" alt="livro de Lideranca"></div>
-                                <div class="swiper-slide" data-swiper-slide-index="2"><img src="img/Javascript.png" alt="livro de javascript"></div>
-                                <div class="swiper-slide" data-swiper-slide-index="3"><img src="img/ApacheKafka.png" alt="livro de apache"></div>
-                                <div class="swiper-slide" data-swiper-slide-index="4"><img src="img/Guia Front-end.png" alt="livro de front-end"></div>
-                                <div class="swiper-slide" data-swiper-slide-index="5"><img src="img/Portugol.png" alt="livro de portugol"></div>
-                            </div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+                    <div class="swiper">
+                        <div class="swiper-pagination swiper-pagination-bullets">
+                            <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
+                            <span class="swiper-pagination-bullet"></span>
                         </div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" data-swiper-slide-index="1"><img src="img/Liderança.png" alt="livro de Lideranca"></div>
+                            <div class="swiper-slide" data-swiper-slide-index="2"><img src="img/Javascript.png" alt="livro de javascript"></div>
+                            <div class="swiper-slide" data-swiper-slide-index="3"><img src="img/ApacheKafka.png" alt="livro de apache"></div>
+                            <div class="swiper-slide" data-swiper-slide-index="4"><img src="img/Guia Front-end.png" alt="livro de front-end"></div>
+                            <div class="swiper-slide" data-swiper-slide-index="5"><img src="img/Portugol.png" alt="livro de portugol"></div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                     <div class="card__area">
                         <div class="card">
@@ -168,28 +172,26 @@
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                     </div>
-                </div>
-                
-                <div class="card__area">
-                    <div class="card">
-                        <div class="card__conteudo">
-                            <div>
-                                <img class="card__content-img" src="img/Estrelinhas.png" alt="card-estrelas">
-                                <h3 class="card__sugestao">Autora do Mês</h3>
-                                <h2 class="card__titulo">Juliana Agarikov</h2>
-                                <p class="card__texto">
-                                    Analista de sistemas e escritora, Juliana é especialista em Front-End.
-                                </p>
+                    <div class="card__area">
+                        <div class="card">
+                            <div class="card__conteudo">
+                                <div>
+                                    <img class="card__content-img" src="img/Estrelinhas.png" alt="card-estrelas">
+                                    <h3 class="card__sugestao">Autora do Mês</h3>
+                                    <h2 class="card__titulo">Juliana Agarikov</h2>
+                                    <p class="card__texto">
+                                        Analista de sistemas e escritora, Juliana é especialista em Front-End.
+                                    </p>
+                                </div>
+                                <img src="img/Perfil-escritora 1.png" alt="">
                             </div>
-                            <img src="img/Perfil-escritora 1.png" alt="">
-                           
-                        </div>
-                        <div class="card__interesse">
-                            <div>
-                                <a href="#"><img src="img/Favoritos.svg" alt="favoritos-card"></a>
-                                <a href="#"><img src="img/Compras.svg" alt="compras-card"></a>
+                            <div class="card__interesse">
+                                <div>
+                                    <a href="#"><img src="img/Favoritos.svg" alt="favoritos-card"></a>
+                                    <a href="#"><img src="img/Compras.svg" alt="compras-card"></a>
+                                </div>
+                                <a class="card__button" href="#">Saiba mais</a>
                             </div>
-                            <a class="card__button" href="#">Saiba mais</a>
                         </div>
                     </div>
                 </div>
@@ -210,7 +212,7 @@
                             <a class="topico__lista-link" href="#">Agile</a>
                         </li>
                         <li class="topico__lista-item">
-                            <a class="topico__lista-link" href="#">Startups</a>
+                            <a class="topico__lista-link" href="#">oo</a>
                         </li>
                         <li class="topico__lista-item">
                             <a class="topico__lista-link" href="#">HTML & CSS</a>
@@ -219,7 +221,7 @@
                             <a class="topico__lista-link" href="#">Python</a>
                         </li>
                         <li class="topico__lista-item">
-                            <a class="topico__lista-link" href="#">oo</a>
+                            <a class="topico__lista-link" href="#">Startups</a>
                         </li>
                         <li class="topico__lista-item">
                             <a class="topico__lista-link" href="#">Java</a>

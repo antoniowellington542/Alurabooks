@@ -32,3 +32,25 @@ section#topicos__visitados .topico__lista li.topico__lista-item a.topico__lista-
     font-size: 14px;
 }
 
+@media screen and (min-width:1728px) {
+    section#topicos__visitados h2.topicos__title{
+        font-size: 32px;
+     }
+    section#topicos__visitados .topicos{
+        padding: 1em 33vw;
+    }
+
+    section#topicos__visitados .topico__lista li.topico__lista-item{
+        margin: 2.5em 0em 1.5em 0em;
+    }
+
+    section#topicos__visitados .topico__lista {
+        justify-content: space-between;
+    }
+
+    section#topicos__visitados .topico__lista li.topico__lista-item a.topico__lista-link{
+        padding: 1em;
+        font-size: 24px;
+    }
+
+}

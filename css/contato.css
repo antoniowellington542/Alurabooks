@@ -59,3 +59,24 @@ section#contato .contato__email::placeholder{
     }
 
 }
+
+
+@media screen and (min-width:1728px) {
+    section#contato{
+        display: flex;
+        justify-content: center;
+        padding: 3em 14vw;
+    }
+
+    section#contato .contato__texto{
+        padding-right: 6em;
+    }
+
+    section#contato .contato__input{
+        width: 20%;
+    }
+
+    section#contato .contato__email::placeholder{
+        background-position: 1em;
+    }
+}

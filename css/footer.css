@@ -54,3 +54,11 @@ footer .lista__rodape{
     }
 
 }
+
+@media screen and (min-width: 1728px) {
+    footer .lista__rodape{
+        padding-left: 1em;
+        border-left: 2px solid var(--cinza);
+    }
+
+}

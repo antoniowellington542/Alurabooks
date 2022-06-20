@@ -5,6 +5,10 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-pagination',
         type: 'bullets',
     },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 });
 
 const card_swiper = new Swiper('.swiper-card', {
@@ -13,6 +17,10 @@ const card_swiper = new Swiper('.swiper-card', {
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
 });
 

@@ -16,7 +16,6 @@ header div.cabecalho .container{
 header div.cabecalho .container .menu__icon{
     background-image: url("../img/Menu.svg");
     background-repeat: no-repeat;
-    background-size: contain;
     width: 55px;
     height: 55px;
     display: inline-block;
@@ -85,6 +84,23 @@ header div.cabecalho .nav__menu-tablet{
     display: none;
 }
 
+
+
+header .container .icon__compras p,
+header .icon__usuario p{
+        display: none;
+}
+
+header .container .nav__menu .menu__button:checked~.rotulo__menu > .menu__icon{
+    background-image: url("../img/Menu-Aberto.png");
+}
+
+
+header .container .nav__menu .menu__button:checked~.rotulo__menu{
+    background: var(--azul-degrade);
+}
+
+
 @media screen and (min-width: 1024px) {
     /*header inicion*/
     header .cabecalho .container .logo__titulo{
@@ -146,6 +162,33 @@ header div.cabecalho .nav__menu-tablet{
         background: var(--branco);
         width: auto;
         padding: 1em 0 0 0;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+    header .container .icon__compras,
+    header .icon__usuario {
+        display: flex;
+        align-items: center;
+        margin-right: 2em;
+    }
+
+    header .container .icon__compras p,
+    header .icon__usuario p{
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--preto);
+    text-decoration: none;
+}
+
+    header .cabecalho{
+        padding: 1em 2em;
+    }
+
+    header .nav__menu-desktop {
+        margin-right: auto;
     }
 
 }
